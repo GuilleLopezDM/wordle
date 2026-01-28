@@ -20,3 +20,16 @@ def convertir_secreto():
         aux.append(f"[{palabra_secreta[i]}]")
 convertir_secreto()
 print(aux)
+intentos = 0
+while intentos < 6:
+    print(f"te quedan {6 - intentos} intentos")
+    intentos = intentos + 1
+    palabra_ingresada = input("Ingrese una palabra: ")
+    print(f"la palabra ingresada es: {palabra_ingresada}")
+    print(verificador_palabra(palabra_ingresada, palabra_secreta))
+    if letras_verificadas==aux:
+        print(f"Felicidades encontraste la palabra: {palabra_secreta}")
+        break
+    else:
+        letras_verificadas=[]
+print(letras_verificadas)
