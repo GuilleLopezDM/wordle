@@ -14,3 +14,9 @@ def verificador_palabra(palabra_ingresada, palabra_secreta):
             letras_verificadas.append(palabra_ingresada[i])
     
     return letras_verificadas
+aux = []
+def convertir_secreto():
+    for i in range(5):
+        aux.append(f"[{palabra_secreta[i]}]")
+convertir_secreto()
+print(aux)
